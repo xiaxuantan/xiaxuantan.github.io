@@ -10,7 +10,7 @@ class Posts extends Component {
         const postItems = this.props.postsMeta.map(obj => (
             <tr className="row m-0">
                 <td className="col-xs-8 col-md-8">
-                    <Link to={obj.link}>
+                    <Link to={'/post/' + obj.key}>
                         {obj.title}
                     </Link>
                 </td>
@@ -31,7 +31,6 @@ class Posts extends Component {
             </Table>
         )
     }
-
 }
 
 export default Posts;

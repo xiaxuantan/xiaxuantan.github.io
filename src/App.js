@@ -28,6 +28,7 @@ const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC';
 
 const POSTS_META = [
   {
+    key: 'what-could-possibly-benefit-a-research-team',
     title: 'What could possibly benefit a research team?',
     link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/thoughts/what-could-possibly-benefit-a-research-team.md',
     date: '2020-01-21',
@@ -40,7 +41,7 @@ function App() {
     <Container>
       <Navigation links={NAVIGATION_LINKS} />
       <Row>
-        <Col xs={2} className="sideColumn">
+        <Col xs={2}>
           <SideColumn
             bloggerName={BLOGGER_NAME}
             bloggerHeadline={BlOGGER_HEADLINES}
