@@ -1,8 +1,7 @@
 import React from 'react';
-import { Col, Image, Nav } from 'react-bootstrap';
+import { Col, Image } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
 
 import { faGithub, faLinkedin, faWeibo } from '@fortawesome/free-brands-svg-icons'
 
@@ -30,7 +29,7 @@ const sideColumn = (props) => {
   );
 
   return (
-    <Col xs={2} className="sideColumn">
+    <div className="sideColumn">
       <div className="avatarFrame">
         <Image src="avatar.jpg" roundedCircle className="avatar" />
       </div>
@@ -43,7 +42,7 @@ const sideColumn = (props) => {
       <div className="bloggerLinks">
         {socialMedia}
       </div>
-    </Col>
+    </div>
   )
 }
 
