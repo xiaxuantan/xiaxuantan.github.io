@@ -7,26 +7,32 @@ import About from './components/About/About';
 
 const SOCIAL_MEDIA = {
   Linkedin: 'https://www.linkedin.com/in/xiaxuan-tan',
-  Weibo: 'https://www.weibo.com/peterxuan',
-  Github: 'https://www.github.com/xiaxuantan'
-}
+  Github: 'https://www.github.com/xiaxuantan',
+  Weibo: 'https://www.weibo.com/peterxuan'
+};
 
 const NAVIGATION_LINKS = {
   Posts: '/posts',
   // Publications: '/publications',
   Projects: '/projects',
   Biography: '/biography'
-}
+};
+
+const BLOGGER_NAME = 'Xiaxuan Tan';
+
+const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC';
 
 function App() {
   return (
     <Container>
       <Navigation links={NAVIGATION_LINKS} />
       <Row>
-        <SideColumn />
+        <SideColumn
+          bloggerName={BLOGGER_NAME}
+          bloggerHeadline={BlOGGER_HEADLINES}
+          socialMedia={SOCIAL_MEDIA} />
         <About />
       </Row>
-      <Footer socialMedia={SOCIAL_MEDIA} />
     </Container >
   );
 }
