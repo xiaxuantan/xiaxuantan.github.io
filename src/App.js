@@ -9,6 +9,7 @@ import SideColumn from './components/SideColumn/SideColumn';
 import About from './components/About/About';
 import Posts from './components/Posts/Posts';
 import Post from './containers/Post/Post';
+import Footer from './components/Footer/Footer';
 
 const SOCIAL_MEDIA = {
   Linkedin: 'https://www.linkedin.com/in/xiaxuan-tan',
@@ -54,7 +55,7 @@ function App() {
             bloggerHeadline={BlOGGER_HEADLINES}
             socialMedia={SOCIAL_MEDIA} />
         </Col>
-        <Col>
+        <Col style={{ minHeight: "60vh" }}>
           <Switch>
             <Route path="/posts">
               <Posts postsMeta={POSTS_META} />
@@ -68,6 +69,7 @@ function App() {
           </Switch>
         </Col>
       </Row>
+      <Footer />
     </Container>
   );
 }

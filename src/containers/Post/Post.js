@@ -8,15 +8,15 @@ export default function (props) {
 
     const [content, setContent] = useState('');
     let { key } = useParams();
-    const p = props.postsMeta.find(element => element.key == key);
+    const p = props.postsMeta.find(element => element.key === key);
 
     console.log(props.postsMeta);
     console.log(key);
     console.log(p);
 
     useEffect(() => {
-        axios.get(p.link).
-            then(response => {
+        axios.get(p.link)
+            .then(response => {
                 setContent(response.data);
             });
     });

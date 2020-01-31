@@ -1,11 +1,12 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
+import './About.css';
+import { Jumbotron, Container } from 'react-bootstrap';
 
 
 const about = () => {
     return (
-        <Col>
-        </Col>
+        <div className="about-bg">
+        </div>
     )
 }
 
