@@ -40,11 +40,11 @@ const sideColumn = (props) => {
         <div className="bloggerHeadline">
           {props.bloggerHeadline}
         </div>
-        <div className="bloggerLinks">
-          {socialMedia}
-        </div>
       </div>
-    </div>
+      <div className="bloggerLinks">
+        {socialMedia}
+      </div>
+    </div >
   )
 }
 
