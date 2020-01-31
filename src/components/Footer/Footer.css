@@ -1,0 +1,12 @@
+.footerFrame {
+    background: #666666;
+}
+
+.footerLink {
+    color: yellow;
+}
+
+a:hover.footerLink {
+    color: yellow;
+    text-decoration: none;
+}
