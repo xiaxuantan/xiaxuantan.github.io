@@ -29,7 +29,7 @@ const sideColumn = (props) => {
   );
 
   return (
-    <div>
+    <div className="sideColumn">
       <div className="avatarFrame">
         <Image src="avatar.jpg" roundedCircle className="avatar" />
       </div>

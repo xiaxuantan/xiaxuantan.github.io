@@ -1,38 +1,11 @@
 .avatarFrame {
     height: 180px;
-    float: left;
     padding-top: 15px;
-}
-
-@media screen and (max-width: 992px) {
-    .avatarFrame {
-        height: 100px;
-        padding-top: 15px;
-    }
 }
 
 .avatar {
     height: 150px;
     width: 150px;
-}
-
-@media screen and (max-width: 992px) {
-    .avatar {
-        height: 70px;
-        width: 70px;
-    }
-}
-
-.bloggerInfo {
-    float: left;
-    /* width: 150px; */
-}
-
-@media screen and (max-width: 992px) {
-    .bloggerInfo {
-        padding-top: 15px;
-        padding-left: 20px
-    }
 }
 
 .bloggerName {
@@ -49,16 +22,8 @@
 }
 
 .bloggerLinks {
-    float: left;
     margin-top: 0px;
-    padding: 0px;
-}
-
-@media screen and (max-width: 992px) {
-    .bloggerLinks {
-        padding-top: 15px;
-        padding-left: 20px
-    }
+    padding: 10px 0 0 0;
 }
 
 .bloggerLink {
@@ -69,4 +34,52 @@
 .bloggerLink a {
     color: gray;
     text-decoration: none;
+}
+
+@media screen and (max-width: 991px) {
+    .sideColumn {
+        display: flex;
+    }
+    .avatar {
+        height: 70px;
+        width: 70px;
+    }
+    .avatarFrame {
+        height: 100px;
+        padding-top: 15px;
+    }
+    .bloggerInfo {
+        flex: 1;
+        padding-top: 15px;
+        padding-left: 20px
+    }
+    .bloggerLinks {
+        padding-top: 15px;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bloggerInfo {
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .bloggerName {
+        font-size: medium;
+    }
+    .bloggerHeadline {
+        font-size: x-small;
+    }
+    .bloggerLink {
+        font-size: 0.7em;
+    }
+    .avatar {
+        height: 45px;
+        width: 45px;
+    }
+    .avatarFrame {
+        height: 100px;
+        padding-top: 25px;
+    }
 }

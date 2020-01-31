@@ -26,7 +26,7 @@ const NAVIGATION_LINKS = {
 
 const BLOGGER_NAME = 'Xiaxuan Tan';
 
-const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC';
+const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC; Incoming Software Engineer @ Riot Games';
 
 const POSTS_META = [
   {
