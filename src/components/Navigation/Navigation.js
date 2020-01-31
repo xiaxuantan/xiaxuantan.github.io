@@ -7,13 +7,16 @@ const Navigation = (props) => {
         <Nav.Link as={Link} to={props.links[key]} key={key}>{key}</Nav.Link>
     )
     return (
-        <Navbar bg="dark" variant="dark" >
+        <Navbar bg="dark" variant="dark" expand="sm">
             <Navbar.Brand href="/">About</Navbar.Brand>
-            <Nav className="mr-auto">
-                {navLinks}
-            </Nav>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="mr-auto">
+                    {navLinks}
+                </Nav>
+            </Navbar.Collapse>
         </Navbar >
     );
 };
 
-export default Navigation
+export default Navigation;

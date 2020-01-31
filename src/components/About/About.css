@@ -1,9 +1,8 @@
 .about-bg {
     background-image: url("/bg.jpeg");
-    height: 60vh;
+    height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-color: rgba(0, 0, 0, 0.5); */
     opacity: 0.5;
 }

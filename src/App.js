@@ -55,7 +55,7 @@ function App() {
             bloggerHeadline={BlOGGER_HEADLINES}
             socialMedia={SOCIAL_MEDIA} />
         </Col>
-        <Col style={{ minHeight: "60vh" }}>
+        <Col style={{ minHeight: "80vh" }}>
           <Switch>
             <Route path="/posts">
               <Posts postsMeta={POSTS_META} />
