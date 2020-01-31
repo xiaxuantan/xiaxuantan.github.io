@@ -1,11 +1,11 @@
 import React from 'react';
 import './About.css';
 
-const about = () => {
+const about = (props) => {
+
     return (
-        <div className="about-bg">
+        <div className="about-bg" style={{ backgroundImage: "url(" + props.bgImg + ")" }}>
             <div className="about-content">
-                
             </div>
         </div>
     )

@@ -1,6 +1,6 @@
 .avatarFrame {
     height: 180px;
-    padding-top: 15px;
+    padding: 15px 0;
 }
 
 .avatar {
@@ -32,13 +32,15 @@
 }
 
 .bloggerLink a {
-    color: gray;
+    color: #666666;
     text-decoration: none;
 }
 
 @media screen and (max-width: 991px) {
     .sideColumn {
         display: flex;
+        display: -webkit-flex;
+        align-items: center;
     }
     .avatar {
         height: 70px;
@@ -46,15 +48,13 @@
     }
     .avatarFrame {
         height: 100px;
-        padding-top: 15px;
     }
     .bloggerInfo {
         flex: 1;
-        padding-top: 15px;
         padding-left: 20px
     }
     .bloggerLinks {
-        padding-top: 15px;
+        padding-top: 0px;
         padding-left: 10px;
         padding-right: 20px;
     }
@@ -62,7 +62,6 @@
 
 @media screen and (max-width: 575px) {
     .bloggerInfo {
-        padding-top: 10px;
         padding-left: 10px;
     }
     .bloggerName {
@@ -79,7 +78,6 @@
         width: 45px;
     }
     .avatarFrame {
-        height: 100px;
-        padding-top: 25px;
+        height: 75px;
     }
 }

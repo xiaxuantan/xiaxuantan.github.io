@@ -19,7 +19,6 @@ const SOCIAL_MEDIA = {
 
 const NAVIGATION_LINKS = {
   Posts: '/posts',
-  // Publications: '/publications',
   Projects: '/projects',
   Biography: '/biography'
 };
@@ -27,6 +26,8 @@ const NAVIGATION_LINKS = {
 const BLOGGER_NAME = 'Xiaxuan Tan';
 
 const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC; Incoming Software Engineer @ Riot Games';
+
+const BG_IMG = 'bird.jpg';
 
 const POSTS_META = [
   {
@@ -64,7 +65,7 @@ function App() {
               <Post postsMeta={POSTS_META} />
             </Route>
             <Route path="/">
-              <About />
+              <About bgImg={BG_IMG} />
             </Route>
           </Switch>
         </Col>
