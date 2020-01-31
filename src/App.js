@@ -41,7 +41,7 @@ function App() {
     <Container>
       <Navigation links={NAVIGATION_LINKS} />
       <Row>
-        <Col xs={2}>
+        <Col xs={12} lg={2}>
           <SideColumn
             bloggerName={BLOGGER_NAME}
             bloggerHeadline={BlOGGER_HEADLINES}

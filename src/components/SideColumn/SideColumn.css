@@ -1,16 +1,24 @@
-.sideColumn {
-    min-height: 700px;
-}
-
 .avatarFrame {
-    display: table-cell;
-    vertical-align: middle;
-    height: 200px;
+    height: 180px;
+    float: left;
+    padding-top: 15px;
 }
 
 .avatar {
     height: 150px;
     width: 150px;
+}
+
+.bloggerInfo {
+    float: left;
+    width: 150px;
+}
+
+@media screen and (min-width: 330px) and (max-width: 992px) {
+.bloggerInfo {
+    padding-top: 15px;
+    padding-left: 20px
+}
 }
 
 .bloggerName {
@@ -25,7 +33,6 @@
     color: gray;
     margin: 5px 0;
 }
-
 
 .bloggerLinks {
     margin-top: 15px;

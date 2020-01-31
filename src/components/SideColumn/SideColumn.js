@@ -29,18 +29,20 @@ const sideColumn = (props) => {
   );
 
   return (
-    <div className="sideColumn">
+    <div>
       <div className="avatarFrame">
         <Image src="avatar.jpg" roundedCircle className="avatar" />
       </div>
-      <div className="bloggerName">
-        {props.bloggerName}
-      </div>
-      <div className="bloggerHeadline">
-        {props.bloggerHeadline}
-      </div>
-      <div className="bloggerLinks">
-        {socialMedia}
+      <div className='bloggerInfo'>
+        <div className="bloggerName">
+          {props.bloggerName}
+        </div>
+        <div className="bloggerHeadline">
+          {props.bloggerHeadline}
+        </div>
+        <div className="bloggerLinks">
+          {socialMedia}
+        </div>
       </div>
     </div>
   )
