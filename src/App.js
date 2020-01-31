@@ -7,8 +7,8 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Navigation from './components/Navigation/Navigation';
 import SideColumn from './components/SideColumn/SideColumn';
 import About from './components/About/About';
-import Posts from './containers/Posts/Posts';
-import Post from './components/Post/Post';
+import Posts from './components/Posts/Posts';
+import Post from './containers/Post/Post';
 
 const SOCIAL_MEDIA = {
   Linkedin: 'https://www.linkedin.com/in/xiaxuan-tan',
@@ -33,6 +33,12 @@ const POSTS_META = [
     title: 'What could possibly benefit a research team?',
     link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/thoughts/what-could-possibly-benefit-a-research-team.md',
     date: '2020-01-21',
+  },
+  {
+    key: 'brief-introduction-to-KMP',
+    title: 'Brief introduction to KMP',
+    link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/algorithm/brief-introduction-to-KMP.md',
+    date: '2019-07-25'
   }
 ];
 
