@@ -8,6 +8,7 @@ import Navigation from './components/Navigation/Navigation';
 import SideColumn from './components/SideColumn/SideColumn';
 import About from './components/About/About';
 import Posts from './containers/Posts/Posts';
+import Post from './components/Post/Post';
 
 const SOCIAL_MEDIA = {
   Linkedin: 'https://www.linkedin.com/in/xiaxuan-tan',
@@ -51,6 +52,9 @@ function App() {
           <Switch>
             <Route path="/posts">
               <Posts postsMeta={POSTS_META} />
+            </Route>
+            <Route path="/post/:key">
+              <Post postsMeta={POSTS_META} />
             </Route>
             <Route path="/">
               <About />
