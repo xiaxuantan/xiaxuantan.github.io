@@ -25,9 +25,19 @@ const NAVIGATION_LINKS = {
 
 const BLOGGER_NAME = 'Xiaxuan Tan';
 
-const BlOGGER_HEADLINES = 'BEng @ ZJU; MSCS @ USC; Incoming Software Engineer @ Riot Games';
+const BlOGGER_HEADLINES = 'Still trying to come up with cool phrases to highlight myself';
 
 const BG_IMG = 'bird.jpg';
+
+const SHORT_BIO = `
+# Short Bio
+
+I am Xiaxuan Tan. I am a master student at University of Southern California. I received my bachelor degree from Zhejiang University. Previously I had an internship at [Tencent](https://www.tencent.com/) and worked for a start-up company [Kolmostar](https://www.kolmostar.com/). This summer, I am honored to be an software engineer intern at [Riot Games](https://www.riotgames.com/).
+
+Just like most of software engineers, I think critically, work assiduously and warmly embrace all kinds of new technologies. I believe software can make lives better. My interests lie in back-end development, DevOps, big data and etc.
+
+In my personal life, I am a big fan of sports. Hopefully this year I have more time to play in the flesh instead of watching games on television (I really want to make progress in skiing).
+`
 
 const POSTS_META = [
   {
@@ -65,7 +75,7 @@ function App() {
               <Post postsMeta={POSTS_META} />
             </Route>
             <Route path="/">
-              <About bgImg={BG_IMG} />
+              <About bgImg={BG_IMG} shortBio={SHORT_BIO} />
             </Route>
           </Switch>
         </Col>
