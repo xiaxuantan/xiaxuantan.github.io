@@ -32,11 +32,13 @@ const BG_IMG = 'bird.jpg';
 const SHORT_BIO = `
 # Short Bio
 
-I am Xiaxuan Tan. I am a master student at University of Southern California. I received my bachelor degree from Zhejiang University. Previously I had an internship at [Tencent](https://www.tencent.com/) and worked for a start-up company [Kolmostar](https://www.kolmostar.com/). This summer, I am honored to be an software engineer intern at [Riot Games](https://www.riotgames.com/).
+***
 
-Just like most of software engineers, I think critically, work assiduously and warmly embrace all kinds of new technologies. I believe software can make lives better. My interests lie in back-end development, DevOps, big data and etc.
+Hi, I am Xiaxuan Tan, a master student at University of Southern California. I received my bachelor degree from Zhejiang University. Previously I had an internship at [Tencent](https://www.tencent.com/) and worked for a start-up company [Kolmostar](https://www.kolmostar.com/). This summer, I am fortunate to be an software engineer intern at [Riot Games](https://www.riotgames.com/).
 
-In my personal life, I am a big fan of sports. Hopefully this year I have more time to play in the flesh instead of watching games on television (I really want to make progress in skiing).
+Just like most of software engineers, I think critically, work assiduously and embrace all kinds of new technologies enthusiastically. I believe software can make lives better. My interests lie in back-end development, DevOps, and big data.
+
+In my personal life, I am a big fan of sports. Hopefully this year I have more time to play in the flesh instead of watching games on television (especially skiing).
 `
 
 const POSTS_META = [
@@ -57,31 +59,33 @@ const POSTS_META = [
 
 function App() {
   return (
-    <Container>
+    <div>
       <Navigation links={NAVIGATION_LINKS} />
-      <Row>
-        <Col xs={12} lg={2}>
-          <SideColumn
-            bloggerName={BLOGGER_NAME}
-            bloggerHeadline={BlOGGER_HEADLINES}
-            socialMedia={SOCIAL_MEDIA} />
-        </Col>
-        <Col style={{ minHeight: "80vh" }}>
-          <Switch>
-            <Route path="/posts">
-              <Posts postsMeta={POSTS_META} />
-            </Route>
-            <Route path="/post/:key">
-              <Post postsMeta={POSTS_META} />
-            </Route>
-            <Route path="/">
-              <About bgImg={BG_IMG} shortBio={SHORT_BIO} />
-            </Route>
-          </Switch>
-        </Col>
-      </Row>
+      <Container>
+        <Row>
+          <Col xs={12} lg={2}>
+            <SideColumn
+              bloggerName={BLOGGER_NAME}
+              bloggerHeadline={BlOGGER_HEADLINES}
+              socialMedia={SOCIAL_MEDIA} />
+          </Col>
+          <Col style={{ minHeight: "calc(100vh - 100px)" }}>
+            <Switch>
+              <Route path="/posts">
+                <Posts postsMeta={POSTS_META} />
+              </Route>
+              <Route path="/post/:key">
+                <Post postsMeta={POSTS_META} />
+              </Route>
+              <Route path="/">
+                <About bgImg={BG_IMG} shortBio={SHORT_BIO} />
+              </Route>
+            </Switch>
+          </Col>
+        </Row>
+      </Container>
       <Footer />
-    </Container>
+    </div>
   );
 }
 
