@@ -43,6 +43,12 @@ In my personal life, I am a big fan of sports. Hopefully this year I have more t
 
 const POSTS_META = [
   {
+    key: 'run-hadoop-locally-on-mac-os.md',
+    title: 'Run Hadoop locally on Mac OS',
+    link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/tutorials/run-hadoop-locally-on-mac-os.md',
+    date: '2020-03-09'
+  },
+  {
     key: 'what-could-possibly-benefit-a-research-team',
     title: 'What could possibly benefit a research team?',
     link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/thoughts/what-could-possibly-benefit-a-research-team.md',
@@ -53,7 +59,7 @@ const POSTS_META = [
     title: 'Brief introduction to KMP',
     link: 'https://raw.githubusercontent.com/xiaxuantan/notes/master/algorithm/brief-introduction-to-KMP.md',
     date: '2019-07-25'
-  }
+  },
 ];
 
 
@@ -69,7 +75,7 @@ function App() {
               bloggerHeadline={BlOGGER_HEADLINES}
               socialMedia={SOCIAL_MEDIA} />
           </Col>
-          <Col style={{ minHeight: "calc(100vh - 100px)" }}>
+          <Col lg={10} style={{ minHeight: "calc(100vh - 100px)" }}>
             <Switch>
               <Route path="/posts">
                 <Posts postsMeta={POSTS_META} />
