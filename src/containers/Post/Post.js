@@ -4,15 +4,13 @@ import axios from 'axios';
 import ReactMarkdown from 'react-markdown';
 import CodeBlock from '../../components/CodeBlock/CodeBlock';
 
+import './Post.css';
+
 export default function (props) {
 
     const [content, setContent] = useState('');
     let { key } = useParams();
     const p = props.postsMeta.find(element => element.key === key);
-
-    console.log(props.postsMeta);
-    console.log(key);
-    console.log(p);
 
     useEffect(() => {
         axios.get(p.link)
@@ -22,7 +20,7 @@ export default function (props) {
     });
 
     return (
-        <div style={{ paddingTop: "10px" }}>
+        <div className="post-content">
             <ReactMarkdown
                 source={content}
                 renderers={{ code: CodeBlock }} />

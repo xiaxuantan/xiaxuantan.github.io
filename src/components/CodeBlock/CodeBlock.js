@@ -17,7 +17,7 @@ class CodeBlock extends PureComponent {
     render() {
         const { language, value } = this.props;
         return (
-            <SyntaxHighlighter language={language} style={coy}>
+            <SyntaxHighlighter language={language} style={coy} customStyle={{ overflow: "scroll" }}>
                 {value}
             </SyntaxHighlighter>
         );

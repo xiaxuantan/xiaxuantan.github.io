@@ -22,7 +22,7 @@ const sideColumn = (props) => {
       <div key={key} className="bloggerLink">
         <a href={props.socialMedia[key]}>
           <FontAwesomeIcon icon={SOCIAL_MEDIA_MAPPING[key]} />
-          {' ' + key}
+          {'\u00A0\u00A0' + key}
         </a>
       </div>
     )

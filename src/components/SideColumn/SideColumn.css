@@ -1,3 +1,11 @@
+/* .sideColumn {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+} */
+
 .avatarFrame {
     height: 180px;
     padding: 15px 0;
